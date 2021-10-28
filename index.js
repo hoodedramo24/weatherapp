@@ -1,11 +1,11 @@
 async function getWeather(event){
     event.preventDefault()
     const weatherSearchLocation = event.target[0].value
-    const apiKey = "accuweather api"
+    //place your own Accuweather API key in apiKey
+    const apiKey = ""
     const fetchParams = {
         method: 'GET'
     }
-    
     async function getAPIData(url,params){
         const response = await fetch(url,params)
         const data = await response.json()
